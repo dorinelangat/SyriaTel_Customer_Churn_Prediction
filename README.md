@@ -119,8 +119,13 @@ After the tradeoff, the model's recall improved, indicating a reduced likelihood
 
 ## Conclusion
 
-Both the Random Forest model and the tuned Random Forest model show good performance in predicting customer churn. However, the tuned model has a slightly lower testing accuracy and precision compared to the original model. This suggests that the tuned model may have a better balance between false positive and false negative predictions. 
+Both the Random Forest model and the tuned Random Forest model show good performance in predicting customer churn. However, the tuned model has a slightly lower testing accuracy and precision compared to the original model. This suggests that the tuned model may have a better balance between false positive and false negative predictions.  
 
-The trade-off between identifying as many churn cases as possible (high recall) and minimizing false positive predictions (high precision) is necessary for our analysis as it improves the predictive performance of our model and serves the objective of our stakeholder..
+The trade-off between identifying as many churn cases as possible (high recall) and minimizing false positive predictions (high precision) is necessary for our analysis as it improves the predictive performance of our model and serves the objective of our stakeholder.
 
-The features that contribute the most to whether a customer churns or not include 'total day charge', 'customer service calls', 'total international calls', 'total eve charge', and 'total night charge'.
+Our model can correctly make predictions for approximately 92.93% of the customers, indicating that the model's predictions were accurate for the majority of the customers.
+Out of all the customers predicted as churned, approximately 69.44% of them actually churned, indicating that when the model identified a customer as churned, it was correct around 69.44% of the time.
+Our model successfully captured about 86.96% of the customers who truly churned.
+The F1 score of 77.22% indicates that our model achieved a balanced trade-off between correctly identifying churned customers and minimizing false predictions.
+
+The features that contribute the most to whether a customer churns or not include 'customer service calls', 'total day charge', 'total day minutes', 'total international calls', and 'total eve minutes'.
